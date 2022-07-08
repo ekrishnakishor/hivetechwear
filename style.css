@@ -1,4 +1,88 @@
+
+/* Common Styles  */
+
+
+:root {
+    --main-font: 'Noto Sans', sans-serif;;
+    --subfont: 'Avenir';
+    --bg-color: #373836;
+    --main-color: white;
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--main-font);
+}
+
+/* Header  */
+
+header {
+    font-family: var(--subfont);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0 0 20px;
+    padding: 1vw 0vw;
+    position: fixed;
+    background: var(--main-color);
+}
+
+header .nav-left {
+    width: 60%;
+}
+
+header .nav-left img {
+    width: 150px;
+    margin-left: 10px;
+}
+
+header .nav-right {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .nav-right input {
+    background: var(--bg-color);
+    padding: 0.5vw 2vw;
+    border: none;
+    border-radius: 9px;
+    color: var(--main-color);
+}
+
+header .nav-right input::placeholder {
+    color: var(--main-color);
+}
+
+header .nav-right img#search {
+    left: 15.5vw;
+    top: 0.7vw;
+    width: 20px;
+}
+
+/* Main  */
+
+.main .main-wall img {
+    width: 100%;
+    display: block;
+}
+
+.main-2 {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.main-2 .main-2-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0vw 35vw;
+    text-decoration: underline;
+    margin-top: 15px;
+    font-size: 12px;
+    filter: brightness(0.7);
 }
